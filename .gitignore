@@ -1,0 +1,43 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+*.so
+
+# --- Virtualenv / uv ---
+.venv/
+venv/
+.env
+
+# --- Test / type / lint caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# --- Demo runtime artefacts ---
+# .dev-keys/ holds generated ES256 keypairs (PEM) - never commit private keys
+.dev-keys/
+audit.log
+*.log
+
+# --- Editors / OS ---
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# --- Local agent / session tooling (not part of the project) ---
+.claude/
+.entire/
+.plan/
+CLAUDE.local.md
